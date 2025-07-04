@@ -1,0 +1,280 @@
+/* ==================== Reset ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==================== Body ==================== */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: black;
+    line-height: 1.6;
+    flex: 1;
+}
+
+/* ==================== Navbar ==================== */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: teal;
+    padding: 1rem;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: lightyellow;
+    transform: scale(1.1);
+}
+
+/* ==================== Section ==================== */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* ==================== About Section ==================== */
+#about {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+#about p {
+    margin-bottom: 20px;
+}
+
+/* ==================== Projects ==================== */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ==================== Footer ==================== */
+footer {
+    background-color: teal;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: lightyellow;
+}
+
+/* ==================== Download Resume Button ==================== */
+a[download] {
+    background-color: teal;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+a[download]:hover {
+    background-color: darkcyan;
+    transform: scale(1.05);
+}
+
+/* ==================== Scroll Fade-In Animation ==================== */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    will-change: opacity, transform;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+.chart-container {
+    width: 90%;
+    max-width: 600px;
+    height: 400px; /* NEW LINE! */
+    margin: 20px auto;
+    position: relative; /* Important for Chart.js to behave nicely */
+}
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  nav {
+    background-color: teal;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: lightyellow;
+  }
+  
+  section#dashboard {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .dashboard-title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .year-buttons {
+    margin-bottom: 2rem;
+  }
+  
+  .year-buttons button {
+    margin: 0.5rem;
+    padding: 0.7rem 1.2rem;
+    border: none;
+    background-color: teal;
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .year-buttons button:hover {
+    background-color: #007f7f;
+    transform: scale(1.05);
+  }
+  
+  .dashboard-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .chart-area {
+    flex: 1 1 400px;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  canvas {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 400px;
+  }
+  
+  .badges-row {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .badges-row img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  .info-panel {
+    flex: 1 1 300px;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: left;
+  }
+  
+  footer {
+    background-color: teal;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+  
+  footer a {
+    color: lightyellow;
+    text-decoration: underline;
+  }
+  
+  footer a:hover {
+    color: white;
+  }
+  
