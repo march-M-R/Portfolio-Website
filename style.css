@@ -137,65 +137,22 @@ a[download]:hover {
     transform: none;
 }
 
-.chart-container {
-    width: 90%;
-    max-width: 600px;
-    height: 400px; /* NEW LINE! */
-    margin: 20px auto;
-    position: relative; /* Important for Chart.js to behave nicely */
-}
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #f4f7f9;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  nav {
-    background-color: teal;
-    padding: 1rem;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-  }
-  
-  nav ul li a:hover {
-    color: lightyellow;
-  }
-  
-  section#dashboard {
+/* ==================== Dashboard Layout ==================== */
+section#dashboard {
     padding: 2rem;
     text-align: center;
-  }
-  
-  .dashboard-title {
+}
+
+.dashboard-title {
     font-size: 2rem;
     margin-bottom: 1.5rem;
-  }
-  
-  .year-buttons {
+}
+
+.year-buttons {
     margin-bottom: 2rem;
-  }
-  
-  .year-buttons button {
+}
+
+.year-buttons button {
     margin: 0.5rem;
     padding: 0.7rem 1.2rem;
     border: none;
@@ -205,76 +162,65 @@ a[download]:hover {
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
-  }
-  
-  .year-buttons button:hover {
+}
+
+.year-buttons button:hover {
     background-color: #007f7f;
     transform: scale(1.05);
-  }
-  
-  .dashboard-content {
+}
+
+.dashboard-content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: nowrap;
     gap: 2rem;
     margin-top: 2rem;
-  }
-  
-  .chart-area {
-    flex: 1 1 400px;
+    min-height: 500px;
+}
+
+.chart-area {
+    flex: 1;
+    min-width: 400px;
+    height: 500px;
     background: white;
     padding: 1.5rem;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-  }
-  
-  canvas {
+}
+
+canvas {
     width: 100% !important;
     height: auto !important;
-    max-width: 400px;
-  }
-  
-  .badges-row {
+    max-height: 350px;
+}
+
+.badges-row {
     margin-top: 1rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
-  }
-  
-  .badges-row img {
+}
+
+.badges-row img {
     width: 50px;
     height: 50px;
     object-fit: contain;
-  }
-  
-  .info-panel {
-    flex: 1 1 300px;
+}
+
+.info-panel {
+    flex: 1;
+    min-width: 300px;
+    height: 500px;
     background: white;
     padding: 1.5rem;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
     text-align: left;
-  }
-  
-  footer {
-    background-color: teal;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 3rem;
-  }
-  
-  footer a {
-    color: lightyellow;
-    text-decoration: underline;
-  }
-  
-  footer a:hover {
-    color: white;
-  }
-  
+}
