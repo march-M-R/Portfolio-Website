@@ -3,39 +3,39 @@ document.addEventListener('DOMContentLoaded', function () {
   
     const yearData = {
       2020: {
-        skills: ['Python'],
-        values: [60],
-        info: ['Started B.Tech', 'Joined VarSITy Volunteer'],
+        skills: ['Python','C','Communication'],
+        values: [50,40,60],
+        info: ['Pursuing B.Tech in Computer Science', 'Joined VarSITy -The social Service Club'],
         badges: []
       },
       2021: {
-        skills: ['Python', 'Event Management'],
-        values: [70, 50],
-        info: ['CodeChef Committee', 'EPIC Member'],
+        skills: ['Python','C','Communication','Java'],
+        values: [70, 50,70,50],
+        info: ['Promoted as Varsity mentor','Executive member at EPIC -Entrepreneurship Club','Acting mentor in MOSAIC Theatre Club'],
         badges: []
       },
       2022: {
-        skills: ['Python', 'Data Science'],
-        values: [80, 65],
-        info: ['Verzeo Internship', 'Compiler Lab Projects'],
+        skills: ['Python','C','Communication','Java','Data Structures','Operating Systems'],
+        values: [80,65,75,50,70,60],
+        info: ['Promoted as Head of Entrepreneurship Cell','Verzeo Internship', 'Compiler Lab Projects','Joined Finance Research club as Analytics head'],
         badges: []
       },
       2023: {
-        skills: ['Python', 'Power BI', 'SQL'],
-        values: [85, 75, 70],
-        info: ['New India Assurance Internship', 'InternPe', 'EPIC Interim Head'],
-        badges: ['powerbi.png', 'sql.png']
+        skills: ['Python','C','Communication','Java','Data Structures','Operating Systems','R Programming','DBMS','SQL','Big Data','Data Science','Machine Learning','Power BI'],
+        values: [85, 65, 78,50,70,65,70,80,60,75,85,80,87],
+        info: ['New India Assurance Internship - Data Analyst', 'InternPe -Python', 'EPIC Interim Head','Finance Club Head','MOSAIC acting head','CodeChef Executive member'],
+        badges: []
       },
       2024: {
-        skills: ['Linux', 'Git', 'Cloud'],
-        values: [90, 80, 75],
-        info: ['Nasdaq Internship', 'AWS Course', 'IEEE Publication'],
-        badges: ['git.png', 'linux.png', 'aws.png']
+        skills: ['Python','C','Communication','Java','Data Structures','Operating Systems','R Programming','DBMS','SQL','Big Data','Data Science','Machine Learning','Ansible','Jenkins','Oracle','Git','Power BI'],
+        values: [90,60,85,65,80,70,80,75,85,80,85,80,75,70,75,70,87],
+        info: ['Nasdaq Internship - Cloud Computing Engineer', 'IEEE Publication and Conference','EPIC Interim Head','Finance Club Head','MOSAIC acting head','Codechef Events Head'],
+        badges: []
       },
       2025: {
-        skills: ['ML', 'Portfolio Building'],
-        values: [95, 90],
-        info: ['Graduate Program at Stevens', 'Dashboard Project'],
+        skills: ['Python','C','Communication','Java','Data Structures','Operating Systems','R Programming','DBMS','SQL','Big Data','Data Science','Machine Learning','Ansible','Jenkins','Oracle','Git','AWS','Power BI'],
+        values: [90,60,85,65,80,70,80,75,85,80,85,80,75,70,75,70,50,87],
+        info: ['Pursuing Masters in DataScience from Stevens Institute of Technology'],
         badges: []
       }
     };
